@@ -23,7 +23,7 @@ end
 module.listcommands = function()
     local list = ""
     for i,v in pairs(module.Commands) do
-        list = list .. tostring(i) .. " | aliases: " .. table.concat(v.alises,", ") .. "\n"
+        list = list .. tostring(i) .. " | aliases: " .. table.concat(v.aliases,", ") .. "\n"
     end
     rconsoleprint("Commands:\n")
     rconsoleprint(list)
